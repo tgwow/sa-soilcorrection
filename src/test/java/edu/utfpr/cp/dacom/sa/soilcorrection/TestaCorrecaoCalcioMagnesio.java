@@ -28,4 +28,15 @@ public class TestaCorrecaoCalcioMagnesio {
 
     }
 
+    @Test
+    public void testaVPercentualAposCorrecao() {
+        assertEquals(80.5,
+                new CorrecaoCalcioMagnesio()
+                        .calculaVPercentualAposCorrecao(
+                                55.0,
+                                22.5,
+                                3.0));
+
+    }
+
 }
