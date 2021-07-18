@@ -73,4 +73,13 @@ public class TestaValoresIdeais {
                 assertEquals(17.848837209302324, new EquilibrioCorrecaoCTC()
                                 .calculaCarbono(new EquilibrioCorrecaoCTC().calculaMOPercentual(30.7)));
         }
+
+        @Test
+        public void testaVPercentualIdeal() {
+              assertEquals("50",
+                      TexturaSolo.TEXTURA_MEDIA.getVPercentualIdeal());
+
+                assertEquals("60 a 70",
+                        TexturaSolo.ARGILOSO.getVPercentualIdeal());
+        }
 }

@@ -17,6 +17,10 @@ public enum TexturaSolo {
             }
         }
 
+        public String getVPercentualIdeal() {
+            return "60 a 70";
+        }
+
     },
     TEXTURA_MEDIA{
         public NutrientesCTC calculaValorIdeal() {
@@ -32,8 +36,14 @@ public enum TexturaSolo {
                 default -> { throw new IllegalArgumentException(); }
             }
         }
+
+        public String getVPercentualIdeal() {
+            return "50";
+        }
+
     };
     
     public abstract NutrientesCTC calculaValorIdeal();
     public abstract String getParticipacaoIdealCTC(NomeNutriente nutriente);
+    public abstract String getVPercentualIdeal();
 }
