@@ -39,4 +39,20 @@ public class TestaCorrecaoCalcioMagnesio {
 
     }
 
+    @Test
+    public void testaNutrientesAdicionais() {
+        var correcaoCalcioMagnesio = new CorrecaoCalcioMagnesio();
+        var qtdeCalcioMagnesioAplicar = 3.51;
+
+        assertEquals(1, correcaoCalcioMagnesio.getNutrientesAdicionais(
+                qtdeCalcioMagnesioAplicar,
+                FonteCalcioMagnesio.GESSO_AGRICOLA).size());
+
+        // Testa se a correcao foi aplicada corretamente
+        assertEquals(526.5, correcaoCalcioMagnesio.getNutrientesAdicionais(
+                qtdeCalcioMagnesioAplicar,
+                FonteCalcioMagnesio.GESSO_AGRICOLA)
+                        .iterator().next().getCorrecaoAdicional());
+    }
+
 }

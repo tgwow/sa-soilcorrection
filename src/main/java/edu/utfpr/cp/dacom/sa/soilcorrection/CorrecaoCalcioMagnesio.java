@@ -1,6 +1,6 @@
 package edu.utfpr.cp.dacom.sa.soilcorrection;
 
-public class CorrecaoCalcioMagnesio {
+public class CorrecaoCalcioMagnesio implements ICorrecaoNutriente<FonteCalcioMagnesio>{
 
     /**
      * Os paramêtros referem-se a participação no CTC de cada nutriente após a correção
