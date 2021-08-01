@@ -40,19 +40,61 @@ public class TestaCorrecaoCalcioMagnesio {
     }
 
     @Test
-    public void testaNutrientesAdicionais() {
+    public void testaCustoReaisHa() {
+
         var correcaoCalcioMagnesio = new CorrecaoCalcioMagnesio();
-        var qtdeCalcioMagnesioAplicar = 3.51;
 
-        assertEquals(1, correcaoCalcioMagnesio.getNutrientesAdicionais(
-                qtdeCalcioMagnesioAplicar,
-                FonteCalcioMagnesio.GESSO_AGRICOLA).size());
+        var qtdeCalcioMagnesioAplicarKgHa = 1844.76;
 
-        // Testa se a correcao foi aplicada corretamente
-        assertEquals(526.5, correcaoCalcioMagnesio.getNutrientesAdicionais(
-                qtdeCalcioMagnesioAplicar,
-                FonteCalcioMagnesio.GESSO_AGRICOLA)
-                        .iterator().next().getCorrecaoAdicional());
+        assertEquals(
+            922.68, 
+            correcaoCalcioMagnesio.calculaCusto(
+                500.0, 
+                qtdeCalcioMagnesioAplicarKgHa),
+            0.5);
+    }
+
+    @Test
+    public void testaNutrientesAdicionais() {
+
+        var correcaoCalcioMagnesio = new CorrecaoCalcioMagnesio();
+        
+        var qtdeCalcioMagnesioAplicarKgHa = 1844.76;
+
+        assertEquals(
+            1, 
+            correcaoCalcioMagnesio.getNutrientesAdicionais(
+                    qtdeCalcioMagnesioAplicarKgHa, 
+                    FonteCalcioMagnesio.GESSO_AGRICOLA)
+                        .size());
+
+        qtdeCalcioMagnesioAplicarKgHa = 3.51 * 1000;
+
+        assertEquals(
+            526.16, 
+            correcaoCalcioMagnesio.getNutrientesAdicionais(
+                qtdeCalcioMagnesioAplicarKgHa, 
+                    FonteCalcioMagnesio.GESSO_AGRICOLA)
+                        .stream()
+                        .findFirst()
+                        .get()
+                        .getCorrecaoAdicional(),
+            0.5);
+    }
+
+    @Test
+    public void testaQtdeAplicar() {
+
+        double qtdeFonteAdicionar = 1.291755;
+        double prntPercent = 0.7;
+
+        assertEquals(1.85, 
+            new CorrecaoCalcioMagnesio()
+                .calculaQuantidadeAplicar(
+                    qtdeFonteAdicionar, 
+                    prntPercent),
+            0.05);
+
     }
 
 }

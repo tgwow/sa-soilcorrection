@@ -12,4 +12,19 @@ public class CorrecaoCalcioMagnesio implements ICorrecaoNutriente<FonteCalcioMag
     ) {
         return calcio + magnesio + potassio;
     }
+
+    public double calculaQuantidadeAplicar(
+        double qtdeFonteAdicionar, 
+        double prntPercent) {
+
+        if (qtdeFonteAdicionar <= 0) {
+            throw new IllegalArgumentException();
+        }
+
+        if (prntPercent <= 0) {
+            throw new IllegalArgumentException();
+        }
+
+        return qtdeFonteAdicionar / prntPercent;
+    }
 }
