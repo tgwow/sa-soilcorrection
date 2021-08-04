@@ -2,10 +2,11 @@ package edu.utfpr.cp.dacom.sa.soilcorrection;
 
 import java.util.Set;
 import lombok.Getter;
+import lombok.RequiredArgsConstructor;
 
 @Getter
+@RequiredArgsConstructor
 public enum FonteCalcioMagnesio implements IFonteNutriente {
-
     CALCARIO_DOLOMITICO(30.4, Set.of()),
     CALCARIO_CALCITICO(56.0, Set.of()),
     CALCARIO_CONCHA(54.0, Set.of()),
@@ -15,13 +16,5 @@ public enum FonteCalcioMagnesio implements IFonteNutriente {
 
    private final double teorFonte;
    private final Set<NutrienteAdicional> nutrientesAdicionais;
-
-    FonteCalcioMagnesio(
-            double teorFonte,
-            final Set<NutrienteAdicional> nutrienteAdicionais
-    ) {
-        this.teorFonte = teorFonte;
-        this.nutrientesAdicionais = nutrienteAdicionais;
-    }
 
 }
