@@ -17,19 +17,27 @@ public class TestaValoresIdeais {
                         .aluminioHidrogenio(0.0)
                         .build();
 
-                assertEquals(valoresIdeais.fosforo(),TexturaSolo.ARGILOSO.calculaValorIdeal().fosforo());
-
-                assertEquals(valoresIdeais.aluminio(), TexturaSolo.ARGILOSO.calculaValorIdeal().aluminio());
-
-                assertEquals(valoresIdeais.aluminioHidrogenio(), TexturaSolo.ARGILOSO.calculaValorIdeal().aluminioHidrogenio());
-
-                assertEquals(valoresIdeais.calcio(), TexturaSolo.ARGILOSO.calculaValorIdeal().calcio());
-
-                assertEquals(valoresIdeais.enxofre(), TexturaSolo.ARGILOSO.calculaValorIdeal().enxofre());
-
-                assertEquals(valoresIdeais.magnesio(), TexturaSolo.ARGILOSO.calculaValorIdeal().magnesio());
-
-                assertEquals(valoresIdeais.potassio(), TexturaSolo.ARGILOSO.calculaValorIdeal().potassio());
+                assertEquals(
+                        valoresIdeais.fosforo(),
+                        TexturaSolo.ARGILOSO.calculaValorIdeal().fosforo());
+                assertEquals(
+                        valoresIdeais.aluminio(),
+                        TexturaSolo.ARGILOSO.calculaValorIdeal().aluminio());
+                assertEquals(
+                        valoresIdeais.aluminioHidrogenio(),
+                        TexturaSolo.ARGILOSO.calculaValorIdeal().aluminioHidrogenio());
+                assertEquals(
+                        valoresIdeais.calcio(),
+                        TexturaSolo.ARGILOSO.calculaValorIdeal().calcio());
+                assertEquals(
+                        valoresIdeais.enxofre(),
+                        TexturaSolo.ARGILOSO.calculaValorIdeal().enxofre());
+                assertEquals(
+                        valoresIdeais.magnesio(),
+                        TexturaSolo.ARGILOSO.calculaValorIdeal().magnesio());
+                assertEquals(
+                        valoresIdeais.potassio(),
+                        TexturaSolo.ARGILOSO.calculaValorIdeal().potassio());
         }
 
         @Test
@@ -44,19 +52,27 @@ public class TestaValoresIdeais {
                         .aluminioHidrogenio(0.0)
                         .build();
 
-                assertEquals(valoresIdeais.fosforo(),TexturaSolo.TEXTURA_MEDIA.calculaValorIdeal().fosforo());
-
-                assertEquals(valoresIdeais.aluminio(), TexturaSolo.TEXTURA_MEDIA.calculaValorIdeal().aluminio());
-
-                assertEquals(valoresIdeais.aluminioHidrogenio(), TexturaSolo.TEXTURA_MEDIA.calculaValorIdeal().aluminioHidrogenio());
-
-                assertEquals(valoresIdeais.calcio(), TexturaSolo.TEXTURA_MEDIA.calculaValorIdeal().calcio());
-
-                assertEquals(valoresIdeais.enxofre(), TexturaSolo.TEXTURA_MEDIA.calculaValorIdeal().enxofre());
-
-                assertEquals(valoresIdeais.magnesio(), TexturaSolo.TEXTURA_MEDIA.calculaValorIdeal().magnesio());
-
-                assertEquals(valoresIdeais.potassio(), TexturaSolo.TEXTURA_MEDIA.calculaValorIdeal().potassio());
+                assertEquals(
+                        valoresIdeais.fosforo(),
+                        TexturaSolo.TEXTURA_MEDIA.calculaValorIdeal().fosforo());
+                assertEquals(
+                        valoresIdeais.aluminio(),
+                        TexturaSolo.TEXTURA_MEDIA.calculaValorIdeal().aluminio());
+                assertEquals(
+                        valoresIdeais.aluminioHidrogenio(),
+                        TexturaSolo.TEXTURA_MEDIA.calculaValorIdeal().aluminioHidrogenio());
+                assertEquals(
+                        valoresIdeais.calcio(),
+                        TexturaSolo.TEXTURA_MEDIA.calculaValorIdeal().calcio());
+                assertEquals(
+                        valoresIdeais.enxofre(),
+                        TexturaSolo.TEXTURA_MEDIA.calculaValorIdeal().enxofre());
+                assertEquals(
+                        valoresIdeais.magnesio(),
+                        TexturaSolo.TEXTURA_MEDIA.calculaValorIdeal().magnesio());
+                assertEquals(
+                        valoresIdeais.potassio(),
+                        TexturaSolo.TEXTURA_MEDIA.calculaValorIdeal().potassio());
 
         }
 
