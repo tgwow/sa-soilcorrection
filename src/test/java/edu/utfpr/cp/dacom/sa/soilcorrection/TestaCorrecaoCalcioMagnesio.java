@@ -1,5 +1,9 @@
 package edu.utfpr.cp.dacom.sa.soilcorrection;
 
+import edu.utfpr.cp.dacom.sa.soilcorrection.negocio.nutriente.CorrecaoCalcioMagnesio;
+import edu.utfpr.cp.dacom.sa.soilcorrection.negocio.ctc.TexturaSolo;
+import edu.utfpr.cp.dacom.sa.soilcorrection.modelo.fonte.FonteCalcioMagnesio;
+import edu.utfpr.cp.dacom.sa.soilcorrection.modelo.nutriente.NomeNutriente;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

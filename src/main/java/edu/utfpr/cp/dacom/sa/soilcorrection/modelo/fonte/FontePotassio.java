@@ -1,6 +1,9 @@
-package edu.utfpr.cp.dacom.sa.soilcorrection;
+package edu.utfpr.cp.dacom.sa.soilcorrection.modelo.fonte;
 
 import java.util.Set;
+
+import edu.utfpr.cp.dacom.sa.soilcorrection.modelo.nutriente.NomeNutrienteAdicional;
+import edu.utfpr.cp.dacom.sa.soilcorrection.modelo.nutriente.NutrienteAdicional;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 

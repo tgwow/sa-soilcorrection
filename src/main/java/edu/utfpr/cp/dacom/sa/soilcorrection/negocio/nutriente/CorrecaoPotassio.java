@@ -1,6 +1,8 @@
-package edu.utfpr.cp.dacom.sa.soilcorrection;
+package edu.utfpr.cp.dacom.sa.soilcorrection.negocio.nutriente;
 
-public class CorrecaoPotassio 
+import edu.utfpr.cp.dacom.sa.soilcorrection.modelo.fonte.FontePotassio;
+
+public class CorrecaoPotassio
         implements 
             ICorrecaoNutriente<FontePotassio>,
             ICorrecaoNutrienteQuantidadeAplicar<FontePotassio> {
